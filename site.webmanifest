@@ -1,12 +1,25 @@
 {
   "name": "Гостевой дом «Белые ночи»",
   "short_name": "Белые ночи",
-  "description": "Гостевой дом в Медвежьегорске, Республика Карелия",
-  "lang": "ru",
-  "start_url": "https://belienochi.online/",
+  "description": "Гостевой дом в Медвежьегорске, Республика Карелия.",
+  "lang": "ru-RU",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#fffdf8",
   "theme_color": "#17372f",
-  "id": "https://belienochi.online/",
-  "scope": "https://belienochi.online/"
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
