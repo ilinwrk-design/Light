@@ -10,24 +10,30 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#17372f" />
     <meta name="format-detection" content="telephone=yes" />
+    <meta http-equiv="content-language" content="ru" />
+    <meta name="geo.region" content="RU-KR" />
+    <meta name="geo.placename" content="Медвежьегорск" />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content="Гостевой дом «Белые ночи»" />
     <meta property="og:title" content="Гостевой дом «Белые ночи» — отдых в Медвежьегорске" />
     <meta property="og:description" content="Уютные номера, общая кухня, зелёный сад и парковка в Медвежьегорске. Подходит для семейного отдыха, путешествий и командировок." />
-    <meta property="og:image" content="src/posters/1.webp" />
+    <meta property="og:url" content="https://belienochi.online/" />
+    <meta property="og:image" content="https://belienochi.online/src/posters/1.webp" />
+    <meta property="og:image:type" content="image/webp" />
     <meta property="og:image:alt" content="Территория гостевого дома «Белые ночи» в Медвежьегорске" />
+    <meta property="og:image:secure_url" content="https://belienochi.online/src/posters/1.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="768" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Гостевой дом «Белые ночи» — Медвежьегорск" />
     <meta name="twitter:description" content="Уютное размещение в Медвежьегорске: номера, кухня, сад и парковка." />
-    <meta name="twitter:image" content="src/posters/1.webp" />
+    <meta name="twitter:image" content="https://belienochi.online/src/posters/1.webp" />
 
-    <!-- После публикации добавьте абсолютный адрес сайта:
-    <link rel="canonical" href="https://ваш-домен.ru/" />
-    <meta property="og:url" content="https://ваш-домен.ru/" />
-    -->
+    <link rel="canonical" href="https://belienochi.online/" />
 
     <link rel="icon" type="image/jpeg" href="src/img/photo_31_2026-08-04_09-59-51.jpg" />
     <link rel="manifest" href="site.webmanifest" />
@@ -36,31 +42,48 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LodgingBusiness",
-        "name": "Гостевой дом «Белые ночи»",
-        "description": "Уютный гостевой дом в Медвежьегорске с номерами, общей кухней, садом, беседкой и парковкой.",
-        "image": [
-          "src/posters/1.webp",
-          "src/img/photo_1_2026-08-04_09-59-50.jpg",
-          "src/img/photo_47_2026-08-04_09-59-51.jpg"
-        ],
-        "telephone": "+7-911-401-49-28",
-        "priceRange": "₽₽",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "ул. Ленина, 10",
-          "addressLocality": "Медвежьегорск",
-          "addressRegion": "Республика Карелия",
-          "addressCountry": "RU"
-        },
-        "amenityFeature": [
-          { "@type": "LocationFeatureSpecification", "name": "Общая кухня", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Парковка", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Сад и беседка", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Семейные номера", "value": true }
-        ],
-        "checkinTime": "14:00",
-        "checkoutTime": "12:00"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://belienochi.online/#website",
+            "url": "https://belienochi.online/",
+            "name": "Гостевой дом «Белые ночи»",
+            "inLanguage": "ru-RU",
+            "publisher": { "@id": "https://belienochi.online/#lodging" }
+          },
+          {
+            "@type": ["LodgingBusiness", "LocalBusiness"],
+            "@id": "https://belienochi.online/#lodging",
+            "name": "Гостевой дом «Белые ночи»",
+            "url": "https://belienochi.online/",
+            "mainEntityOfPage": { "@id": "https://belienochi.online/#website" },
+            "description": "Уютный гостевой дом в Медвежьегорске с номерами, общей кухней, садом, беседкой и парковкой.",
+            "image": [
+              "https://belienochi.online/src/posters/1.webp",
+              "https://belienochi.online/src/img/photo_1_2026-08-04_09-59-50.jpg",
+              "https://belienochi.online/src/img/photo_47_2026-08-04_09-59-51.jpg"
+            ],
+            "telephone": "+7-911-401-49-28",
+            "priceRange": "₽₽",
+            "currenciesAccepted": "RUB",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ул. Ленина, 10",
+              "addressLocality": "Медвежьегорск",
+              "addressRegion": "Республика Карелия",
+              "addressCountry": "RU"
+            },
+            "hasMap": "https://www.google.com/maps?q=Medvezhyegorsk%2C%20Lenina%2010",
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "Общая кухня", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Парковка", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Сад и беседка", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Семейные номера", "value": true }
+            ],
+            "checkinTime": "14:00",
+            "checkoutTime": "12:00"
+          }
+        ]
       }
     </script>
   </head>
@@ -93,7 +116,7 @@
     <main>
       <section class="intro shell" id="about">
         <div class="intro__panorama">
-          <img src="src/posters/1.webp" alt="Зелёная территория гостевого дома «Белые ночи»" loading="lazy" />
+          <img src="src/posters/1.webp" alt="Зелёная территория гостевого дома «Белые ночи» в Медвежьегорске" width="1024" height="768" loading="eager" fetchpriority="high" decoding="async" />
           <span>Тихий отдых в Медвежьегорске</span>
         </div>
 
