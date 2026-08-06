@@ -1,0 +1,10 @@
+{
+  "name": "Гостевой дом «Белые ночи»",
+  "short_name": "Белые ночи",
+  "description": "Гостевой дом в Медвежьегорске, Республика Карелия",
+  "lang": "ru",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffdf8",
+  "theme_color": "#17372f"
+}

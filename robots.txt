@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# После публикации можно добавить строку:
+# Sitemap: https://ваш-домен.ru/sitemap.xml

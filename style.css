@@ -819,3 +819,29 @@ p {
     display: block;
   }
 }
+/* SEO text block */
+.seo-copy {
+  padding: 30px 0 110px;
+}
+.seo-copy .section-copy {
+  max-width: 900px;
+}
+.seo-copy__text {
+  display: grid;
+  gap: 18px;
+  margin-top: 30px;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+.seo-copy__text a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  .seo-copy {
+    padding: 10px 0 76px;
+  }
+}
